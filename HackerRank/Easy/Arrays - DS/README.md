@@ -47,11 +47,11 @@ Constraints**
 
 ## Solution
 
-```java15
+```java8
 // HackerRank Problem: Arrays - DS
 // Link: https://www.hackerrank.com/challenges/arrays-ds/problem
 // Difficulty: Easy
-// Language: java15
+// Language: java8
 
 import java.io.*;
 import java.math.*;
@@ -76,7 +76,8 @@ class Result {
 
     public static List<Integer> reverseArray(List<Integer> a) {
     // Write your code here
-       List<Integer> result = new ArrayList<>();
+    
+    List<Integer> result = new ArrayList<>();
 
         for (int i = a.size() - 1; i >= 0; i--) {
             result.add(a.get(i));
@@ -84,9 +85,9 @@ class Result {
 
         return result;
     }
-    
 
-}
+
+    }
 
 public class Solution {
     public static void main(String[] args) throws IOException {
