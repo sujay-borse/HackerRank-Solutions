@@ -114,11 +114,11 @@ The hourglass with the maximum sum () is:
 
 ## Solution
 
-```java15
+```java8
 // HackerRank Problem: 2D Array - DS
 // Link: https://www.hackerrank.com/challenges/2d-array/problem
 // Difficulty: Easy
-// Language: java15
+// Language: java8
 
 import java.io.*;
 import java.math.*;
@@ -144,25 +144,27 @@ class Result {
     public static int hourglassSum(List<List<Integer>> arr) {
     // Write your code here
 
-        int max = -63;
+    int max = -63;
 
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                int sum = arr.get(i).get(j)
-                        + arr.get(i).get(j+1)
-                        + arr.get(i).get(j+2)
-                        + arr.get(i+1).get(j+1)
-                        + arr.get(i+2).get(j)
-                        + arr.get(i+2).get(j+1)
-                        + arr.get(i+2).get(j+2);
+for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < 4; j++) {
 
-                if (sum > max) {
-                    max = sum;
-                }
-            }
+        int sum = arr.get(i).get(j)
+                + arr.get(i).get(j + 1)
+                + arr.get(i).get(j + 2)
+                + arr.get(i + 1).get(j + 1)
+                + arr.get(i + 2).get(j)
+                + arr.get(i + 2).get(j + 1)
+                + arr.get(i + 2).get(j + 2);
+
+        if (sum > max) {
+            max = sum;
         }
+    }
+}
 
-        return max;
+return max;
+    
     }
 
 }
